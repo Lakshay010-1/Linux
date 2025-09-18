@@ -1,0 +1,25 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Shell script artifacts
+*.out
+*.pid
+
+# Python virtual env (if you ever add tooling)
+venv/
+.env/
+
+# Backup files (common in Linux editors)
+*~
