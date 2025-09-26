@@ -26,14 +26,15 @@
 
 ## 2. Editing Text
 
-| Command  | Syntax                                                | Description                                          | Example                                  |
-| -------- | ----------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------- |
-| vi / vim | vi <file>                                             | Open file in vi/vim editor                           | vi notes.txt                             |
-| awk      | awk '{print $N}' <file>                               | Print specific column(s) [NF=total Number of fields] | awk '{print $1, $3}' data.txt            |
-| awk      | awk '/word/ {print $0}' <file>                        | Search for a specific word                           | awk '/abc/ {print $0}' data.txt          |
-| awk      | awk '{$1="ReplacedWord"; print $0}' <file>            | Replace words with field words                       | awk {'$3="mno"; print $0}' data.txt      |
-| awk      | awk 'length($<fieldNum>)><ByteNum>' <file>            | Get lines that have more than <ByteNum> byte size    | awk 'length($5)>15' data.txt             |
-| awk      | awk '{if($<fieldNum>=="Something") print $0;}' <file> | Get the field matching the if condition              | awk '{if($3=="mno") print $0;}' data.txt |
+| Command                         | Syntax                                                | Description                                                                                                        | Example                                                           |
+| ------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
+| vi / vim                        | vi <file>                                             | Open file in vi/vim editor                                                                                         | vi notes.txt                                                      |
+| awk                             | awk '{print $N}' <file>                               | Print specific column(s) [NF=total Number of fields]                                                               | awk '{print $1, $3}' data.txt                                     |
+| awk                             | awk '/word/ {print $0}' <file>                        | Search for a specific word                                                                                         | awk '/abc/ {print $0}' data.txt                                   |
+| awk                             | awk '{$1="ReplacedWord"; print $0}' <file>            | Replace words with field words                                                                                     | awk {'$3="mno"; print $0}' data.txt                               |
+| awk                             | awk 'length($<fieldNum>)><ByteNum>' <file>            | Get lines that have more than <ByteNum> byte size                                                                  | awk 'length($5)>15' data.txt                                      |
+| awk                             | awk '{if($<fieldNum>=="Something") print $0;}' <file> | Get the field matching the if condition                                                                            | awk '{if($3=="mno") print $0;}' data.txt                          |
+| [sed](./detailed/sed.md) | sed [options] \<command> \<file>                      | non-interactive text editor that works on streams of data (input from a file or stdin),Processes text line by line | sed 's/foo/bar/g' file.txt</br>sed '2i This is inserted' file.txt |
 
 ---
 
@@ -45,7 +46,7 @@
 | grep -r         | grep -r "pattern" <dir>  | Recursive search in directory           | grep -r "main()" src/                                                                                                                                                 |
 | egrep           | egrep "pat1 pat2" <file> | Extended regex search                   | egrep "error\| warning" log.txt                                                                                                                                       |
 | fgrep           | fgrep "text" <file>      | Fixed string search (faster than regex) | fgrep "ERROR" log.txt                                                                                                                                                 |
-| wc              | wc [options] <file>      | Count lines, words, characters          | wc -l notes.txt (Get no. of lines),<br> wc -w notes.txt (Get no. of words),<br> wc -b notes.txt (Get no. of bytes)                                                            |
+| wc              | wc [options] <file>      | Count lines, words, characters          | wc -l notes.txt (Get no. of lines),<br> wc -w notes.txt (Get no. of words),<br> wc -c notes.txt (Get no. of bytes)                                                    |
 | cut (by chars)  | cut -cN-M <file>         | Extract character range                 | cut -c file.txt -> print a charfrom each line<br>cut -c1,2,4 file.txt -> print selected char from each line<br>cut -c1-6 file.txt-> print ranged chars from each line |
 | cut (by fields) | cut -d':' -fN <file>     | Extract fields by delimiter             | cut -d':' -f1 /etc/passwd<br>cut -d':' -f1-5 /etc/passwd                                                                                                              |
 | sort            | sort <file>              | Sort lines alphabetically               | sort names.txt                                                                                                                                                        |
