@@ -36,10 +36,10 @@
 
 ## 4. Special Permission Bits
 
-- | Command         | Syntax              | Description                               | Example                     |
-  | --------------- | ------------------- | ----------------------------------------- | --------------------------- |
-  | chmod 4xxx file | `chmod 4xxx <file>` | Setuid: run with owner’s permissions      | chmod 4755 /usr/bin/program |
-  | chmod 2xxx dir  | `chmod 2xxx <dir>`  | Setgid: new files inherit group ownership | chmod 2755 shared_dir/      |
-  | chmod 1xxx dir  | `chmod 1xxx <dir>`  | Sticky bit: restrict deletion inside dir  | chmod 1777 /tmp             |
+- | Command         | Syntax                                       | Description                               | Example                     |
+  | --------------- | -------------------------------------------- | ----------------------------------------- | --------------------------- |
+  | chmod 4xxx file | `chmod 4xxx <file>` or `chmod u+s <file>`    | Setuid: run with owner’s permissions      | chmod 4755 /usr/bin/program |
+  | chmod 2xxx dir  | `chmod 2xxx <dir>` or `chmod g+s <file/dir>` | Setgid: new files inherit group ownership | chmod 2755 shared_dir/      |
+  | chmod 1xxx dir  | `chmod 1xxx <dir>` or `chmod +t <file/dir>`  | Sticky bit: restrict deletion inside dir  | chmod 1777 /tmp             |
 
 ---
