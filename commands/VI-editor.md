@@ -1,5 +1,11 @@
 # VI Editor Commands
 
+## 0. Enter VI Editor
+
+- `vi <file>`
+  <br/>
+  The filename can be the name of an existing file or the name of the file you want to create.
+
 ## 1. Modes
 
 - | Mode           | Description                            |
