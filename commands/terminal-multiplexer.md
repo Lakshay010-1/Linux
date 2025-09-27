@@ -80,7 +80,7 @@ Older but very stable. Simple detach/reattach workflow. Still used on servers wi
 - | Command      | Description               | Example             |
   | ------------ | ------------------------- | ------------------- |
   | `Ctrl+a S`   | Split screen horizontally | Press inside screen |
-  | `Ctrl+a ` `  | Split screen vertically   | Press inside screen |
+  | `Ctrl+a \| ` | Split screen vertically   | Press inside screen |
   | `Ctrl+a tab` | Switch between regions    | Press inside screen |
   | `Ctrl+a X`   | Close current region      | Press inside screen |
 
