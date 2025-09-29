@@ -19,6 +19,8 @@
 
 ## 🔹 [VI Commands](./commands/VI-editor.md)
 
+## 🔹 [Shell Scripting](./commands/shell-scripting.md)
+
 ## 🔹 [File Permissions](./commands/file-permission.md)
 
 ## 🔹 [File and Directory Management](./commands/file-management.md)
@@ -28,6 +30,8 @@
 ## 🔹 [System Monitoring](./commands/system-monitoring.md)
 
 ## 🔹 [Environment Variables](./commands/env_var.md)
+
+## 🔹 [Aliases](./commands/aliases.md)
 
 ## 🔹 [Text Processing](./commands/text-processing.md)
 
