@@ -75,14 +75,15 @@
 
 ## 6. Logs & System Activity
 
-| Command    | Syntax           | Description                                                | Example           |
-| ---------- | ---------------- | ---------------------------------------------------------- | ----------------- |
-| uptime     | `uptime`         | Show uptime and load averages                              | uptime            |
-| dmesg      | `dmesg \| less`  | Kernel ring buffer messages (hardware, drivers, boot logs) | dmesg \| grep usb |
-| journalctl | `journalctl -xe` | View systemd logs (errors, warnings)                       | journalctl -xe    |
-| last       | `last`           | Show last login sessions                                   | last              |
-| who        | `who`            | Show who is logged in                                      | who               |
-| w          | `w`              | Show logged-in users + activity                            | w                 |
+| Command    | Syntax              | Description                                                                                                                                                                                              | Example           |
+| ---------- | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| uptime     | `uptime`            | Show uptime and load averages                                                                                                                                                                            | uptime            |
+| dmesg      | `dmesg \| less`     | Kernel ring buffer messages (hardware, drivers, boot logs)                                                                                                                                               | dmesg \| grep usb |
+| journalctl | `journalctl -xe`    | View systemd logs (errors, warnings)                                                                                                                                                                     | journalctl -xe    |
+| last       | `last`              | Show last login sessions                                                                                                                                                                                 | last              |
+| who        | `who`               | Show who is logged in                                                                                                                                                                                    | who               |
+| w          | `w`                 | Show logged-in users + activity                                                                                                                                                                          | w                 |
+| history    | `history [options]` | history shows a list of commands you’ve run in your current shell session<br/>Commands are numbered so you can easily re-execute them(i.e. `!Command_Number`)<br/>History is stored in `/.bash_history`. | history           |
 
 **`/var/log`** -> Central directory where most system and service logs are stored
 
