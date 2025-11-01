@@ -41,6 +41,10 @@
 
 ## 🔹 [Process Management](./commands/process-management.md)
 
+## 🔹 [Network Management](./commands/network-management.md)
+
+## 🔹 [Disk Management](./commands/disk-management.md)
+
 ## 🔹 [Terminal Multiplexer](./commands/terminal-multiplexer.md)
 
 <!-- ## 🔹 []() -->
