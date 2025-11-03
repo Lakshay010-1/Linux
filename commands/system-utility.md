@@ -34,7 +34,7 @@ Runlevels are (no level 2 and 4) :
 | date        | `date [options]`        | Display or set system date and time | date +"`Y`-`M`-`D` `H:M:S`"                                                                                                                                      |
 | cal         | `cal [month] [year]`    | Display calendar                    | cal 09 2025                                                                                                                                                      |
 | uptime      | `uptime`                | Show system uptime and load average | uptime<br/> (**Output**=`Current Linux System time`, `How long systems has been running`, `No. of logged-in Users`, `Average CPU Load:1, 5 and 15 per minutes` ) |
-| timedatectl | `timedatectl [options]` | Manage system time and timezones    | timedatectl set-timezone UTC                                                                                                                                     |
+| timedatectl | `timedatectl [options]` | Manage system time and timezones    | timedatectl set-timezone UTC<br/>timedatectl set-ntp true<br/>timedatectl list-timezones<br/>timedatectl set-time 'YYYY-MM-DD HH:MM:SS'<br/>timedatectl status   |
 
 ---
 
