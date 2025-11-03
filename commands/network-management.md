@@ -77,15 +77,3 @@
 | `tcpdump -i <interface>` | Capture network traffic                                                           | sudo tcpdump -i enp0s3 |
 
 ---
-
-<br/>
-
-# Configuration
-
-### 1. [NIC Bonding](./detailed/nic-bonding.md)
-
-### 2. [FTP](./detailed/ftp.md)
-
-### 3. [Local-Repo](./detailed/local-repo.md)
-
-### 4. [DNS](./detailed/dns.md)
