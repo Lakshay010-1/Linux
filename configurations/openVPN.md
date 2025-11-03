@@ -1,0 +1,32 @@
+# openVPN ( open-source VPN (Virtual Private Network) )
+
+- Software that securely connects remote clients and servers over the internet using encrypted tunnels.
+- Provides secure remote access, site-to-site connections, and encrypted private networks.
+- Uses SSL/TLS for key exchange and encryption.
+
+---
+
+<br/>
+<br/>
+
+## Configuration
+
+| Step    | Action                                         | Command / File / Details                                                                                                                                                                | Purpose / Notes                                                         |
+| ------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **1️**  | **Install OpenVPN & Easy-RSA**                 | **RHEL/CentOS:**<br>`sudo dnf install epel-release -y`<br>`sudo dnf install openvpn easy-rsa -y`<br><br>**Ubuntu/Debian:**<br>`sudo apt update && sudo apt install openvpn easy-rsa -y` | Installs OpenVPN server and certificate management tools.               |
+| **2️**  | **Set up the PKI (Public Key Infrastructure)** | `make-cadir ~/openvpn-ca`<br>`cd ~/openvpn-ca`                                                                                                                                          | Creates the certificate authority directory for Easy-RSA.               |
+| **3️**  | **Initialize the CA (Certificate Authority)**  | `./easyrsa init-pki`<br>`./easyrsa build-ca`                                                                                                                                            | Generates the root CA certificate and private key.                      |
+| **4️**  | **Create Server Certificate & Key**            | `./easyrsa gen-req server nopass`<br>`./easyrsa sign-req server server`                                                                                                                 | Generates and signs the server certificate and private key.             |
+| **5️**  | **Generate Diffie-Hellman parameters**         | `./easyrsa gen-dh`                                                                                                                                                                      | Provides secure key exchange between server and clients.                |
+| **6️**  | **Generate HMAC key (TLS auth)**               | `openvpn --genkey --secret ta.key`                                                                                                                                                      | Adds an extra security layer to prevent DDoS and replay attacks.        |
+| **7️**  | **Copy all certs/keys to OpenVPN directory**   | `sudo cp pki/{ca.crt,issued/server.crt,private/server.key,dh.pem} /etc/openvpn/`                                                                                                        | Makes required certificates and keys available to the VPN daemon.       |
+| **8️**  | **Create server configuration file**           | `sudo nano /etc/openvpn/server.conf                                                                                                                                                     | Defines main OpenVPN server configuration.                              |
+| **9️**  | **Enable IP forwarding**                       | Edit `/etc/sysctl.conf` and add:<br>`net.ipv4.ip_forward = 1`<br>Apply changes:<br>`sudo sysctl -p`                                                                                     | Enables routing of client traffic through the VPN server.               |
+| **10**  | **Start and enable OpenVPN service**           | `sudo systemctl start openvpn@server`<br>`sudo systemctl enable openvpn@server`                                                                                                         | Starts the VPN service and enables it at boot.                          |
+| **11️** | **Adjust firewall rules**                      | `sudo firewall-cmd --add-service=openvpn --permanent`<br>`sudo firewall-cmd --add-masquerade --permanent`<br>`sudo firewall-cmd --reload`                                               | Opens port 1194/UDP and enables NAT for VPN clients.                    |
+| **12️** | **Create client certificates**                 | `cd ~/openvpn-ca`<br>`./easyrsa gen-req client1 nopass`<br>`./easyrsa sign-req client client1`                                                                                          | Generates a unique certificate and key for each client.                 |
+| **13️** | **Generate client configuration file (.ovpn)** | `sudo cp /usr/share/doc/openvpn*/sample/sample-config-files/client.conf ~/client1.ovpn`                                                                                                 | Provides base configuration for client connection.                      |
+| **14️** | **Add certificates to client config**          | Append to `client1.ovpn`:<br>`ca ca.crt<br/>cert client1.crt<br/>key client1.key<br/>tls-auth ta.key 1<br/>`                                                                            | Embeds authentication credentials into client config.                   |
+| **15️** | **Transfer .ovpn file to client**              | Use `scp`, `sftp`, or USB drive                                                                                                                                                         | Moves the client configuration securely to the client system.           |
+| **16️** | **Connect from client**                        | `sudo openvpn --config client1.ovpn`                                                                                                                                                    | Establishes a secure VPN tunnel to the OpenVPN server.                  |
+| **17️** | **Verify VPN connection**                      | `ip a` or `ifconfig`                                                                                                                                                                    | Confirms that a new interface (e.g., `tun0`) appears and VPN is active. |
