@@ -47,4 +47,45 @@
 
 ## 🔹 [Terminal Multiplexer](./commands/terminal-multiplexer.md)
 
-<!-- ## 🔹 []() -->
+---
+
+<br/>
+<br/>
+
+# Configurations
+
+### 1. [NIC Bonding](./configurations/nic-bonding.md)
+
+### 2. [FTP](./configurations/ftp.md)
+
+### 3. [Local-Repo](./configurations/local-repo.md)
+
+### 4. [DNS](./configurations/dns.md)
+
+### 5. [Mail Server](./configurations/mail-servers.md)
+
+### 6. [Web Server](./configurations/web-servers.md)
+
+### 7. [Proxy Server](./configurations/proxy-server.md)
+
+### 8. [Nagios](./configurations/nagios.md)
+
+### 9. [openLDAP](./configurations/openLDAP.md)
+
+### 10. [openVPN](./configurations/openVPN.md)
+
+### 11. [Rsyslog](./configurations/rsyslog.md)
+
+### 12. [Cockpit](./configurations/cockpit.md)
+
+### 13. [Firewall](./configurations/firewall.md)
+
+### 14. [Containers](./configurations/containers.md)
+
+### 15. [Kickstart](./configurations/kickstart.md)
+
+### 16. [Ansible](./configurations/ansible.md)
+
+### 17. [SSH](./configurations/ssh.md)
+
+### 18. [SSH-Key](./configurations/ssh-key.md)
