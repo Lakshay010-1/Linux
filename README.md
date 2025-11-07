@@ -29,6 +29,8 @@
 
 ## 🔹 [System Monitoring](./commands/system-monitoring.md)
 
+## 🔹 [System Security](./commands/system-hardening.md)
+
 ## 🔹 [Environment Variables](./commands/env_var.md)
 
 ## 🔹 [Aliases](./commands/aliases.md)
@@ -89,3 +91,17 @@
 ### 17. [SSH](./configurations/ssh.md)
 
 ### 18. [SSH-Key](./configurations/ssh-key.md)
+
+### 19.[Mounting Partition](./configurations/partition-standard-mount.md)
+
+### 20. [Mounting LVM-Partition](./configurations/partition-lvm-mount.md)
+
+### 21. [Extend LVM-Partition Storage](./configurations/partition-lvm-extend.md)
+
+### 22. [Swap Space](./configurations/swap-space.md)
+
+### 23. [Stratis Storage](./configurations/stratis.md)
+
+### 24. [NAS Setup](./configurations/nas-setup.md)
+
+### 25. [Database Setup](./configurations/database-setup.md)
