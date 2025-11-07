@@ -13,41 +13,41 @@
 
 # Linux Commands
 
-## 🔹 [Help Commands](./commands/help.md)
+## 1. [Aliases](./commands/aliases.md)
 
-## 🔹 [Package Management](./commands/package-management.md)
+## 2. [Communication Management](./commands/communication-management.md)
 
-## 🔹 [VI Commands](./commands/VI-editor.md)
+## 3. [Disk Management](./commands/disk-management.md)
 
-## 🔹 [Shell Scripting](./commands/shell-scripting.md)
+## 4. [Environment Variables](./commands/env_var.md)
 
-## 🔹 [File Permissions](./commands/file-permission.md)
+## 5. [File and Directory Management](./commands/file-management.md)
 
-## 🔹 [File and Directory Management](./commands/file-management.md)
+## 6. [File Permissions](./commands/file-permission.md)
 
-## 🔹 [System Utility](./commands/system-utility.md)
+## 7. [Help Commands](./commands/help.md)
 
-## 🔹 [System Monitoring](./commands/system-monitoring.md)
+## 8. [Network Management](./commands/network-management.md)
 
-## 🔹 [System Security](./commands/system-hardening.md)
+## 9. [Package Management](./commands/package-management.md)
 
-## 🔹 [Environment Variables](./commands/env_var.md)
+## 10. [Process Management](./commands/process-management.md)
 
-## 🔹 [Aliases](./commands/aliases.md)
+## 11. [Shell Scripting](./commands/shell-scripting.md)
 
-## 🔹 [Text Processing](./commands/text-processing.md)
+## 12. [System Monitoring](./commands/system-monitoring.md)
 
-## 🔹 [User Management](./commands/user-management.md)
+## 13. [System Security](./commands/system-hardening.md)
 
-## 🔹 [Communication Management](./commands/communication-management.md)
+## 14. [System Utility](./commands/system-utility.md)
 
-## 🔹 [Process Management](./commands/process-management.md)
+## 15. [Terminal Multiplexer](./commands/terminal-multiplexer.md)
 
-## 🔹 [Network Management](./commands/network-management.md)
+## 16. [Text Processing](./commands/text-processing.md)
 
-## 🔹 [Disk Management](./commands/disk-management.md)
+## 17. [User Management](./commands/user-management.md)
 
-## 🔹 [Terminal Multiplexer](./commands/terminal-multiplexer.md)
+## 18. [VI Commands](./commands/VI-editor.md)
 
 ---
 
@@ -56,52 +56,52 @@
 
 # Configurations
 
-### 1. [NIC Bonding](./configurations/nic-bonding.md)
+### 1. [Ansible](./configurations/ansible.md)
 
-### 2. [FTP](./configurations/ftp.md)
+### 2. [Cockpit](./configurations/cockpit.md)
 
-### 3. [Local-Repo](./configurations/local-repo.md)
+### 3. [Containers](./configurations/containers.md)
 
-### 4. [DNS](./configurations/dns.md)
+### 4. [Database Setup](./configurations/database-setup.md)
 
-### 5. [Mail Server](./configurations/mail-servers.md)
+### 5. [DNS](./configurations/dns.md)
 
-### 6. [Web Server](./configurations/web-servers.md)
+### 6. [Firewall](./configurations/firewall.md)
 
-### 7. [Proxy Server](./configurations/proxy-server.md)
+### 7. [FTP](./configurations/ftp.md)
 
-### 8. [Nagios](./configurations/nagios.md)
+### 8. [Kickstart](./configurations/kickstart.md)
 
-### 9. [openLDAP](./configurations/openLDAP.md)
+### 9. [Local-Repo](./configurations/local-repo.md)
 
-### 10. [openVPN](./configurations/openVPN.md)
+### 10. [Mail Server](./configurations/mail-servers.md)
 
-### 11. [Rsyslog](./configurations/rsyslog.md)
+### 11. [Nagios](./configurations/nagios.md)
 
-### 12. [Cockpit](./configurations/cockpit.md)
+### 12. [NAS Setup](./configurations/nas-setup.md)
 
-### 13. [Firewall](./configurations/firewall.md)
+### 13 [NIC Bonding](./configurations/nic-bonding.md)
 
-### 14. [Containers](./configurations/containers.md)
+### 14 [Partition-LVM extend Storage](./configurations/partition-lvm-extend.md)
 
-### 15. [Kickstart](./configurations/kickstart.md)
+### 15 [Partition-LVM Mount](./configurations/partition-lvm-mount.md)
 
-### 16. [Ansible](./configurations/ansible.md)
+### 16 [Partition Mount](./configurations/partition-standard-mount.md)
 
-### 17. [SSH](./configurations/ssh.md)
+### 17 [openLDAP](./configurations/openLDAP.md)
 
-### 18. [SSH-Key](./configurations/ssh-key.md)
+### 18 [openVPN](./configurations/openVPN.md)
 
-### 19.[Mounting Partition](./configurations/partition-standard-mount.md)
+### 19 [Proxy Server](./configurations/proxy-server.md)
 
-### 20. [Mounting LVM-Partition](./configurations/partition-lvm-mount.md)
+### 20 [Rsyslog](./configurations/rsyslog.md)
 
-### 21. [Extend LVM-Partition Storage](./configurations/partition-lvm-extend.md)
+### 21 [SSH](./configurations/ssh.md)
 
-### 22. [Swap Space](./configurations/swap-space.md)
+### 22 [SSH-Key](./configurations/ssh-key.md)
 
-### 23. [Stratis Storage](./configurations/stratis.md)
+### 23 [Stratis Storage](./configurations/stratis.md)
 
-### 24. [NAS Setup](./configurations/nas-setup.md)
+### 24 [Swap Space](./configurations/swap-space.md)
 
-### 25. [Database Setup](./configurations/database-setup.md)
+### 25 [Web Server](./configurations/web-servers.md)
