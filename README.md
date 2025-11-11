@@ -2,6 +2,10 @@
 
 ### Linux scripts and configurations for automation, optimization, and productivity
 
+### - [Security Enhanced Linux](./SELinux.md)
+
+### - [Guest Addition Tools](./guest-additions-tools.md)
+
 ## Command Syntax
 
 - #### command [options] [arguments]
