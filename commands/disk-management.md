@@ -82,6 +82,7 @@
 | `partprobe`                       | Refresh kernel partition table without reboot.                          | `partprobe`                                                                                                                                     |
 | `blkid`                           | Display filesystem UUIDs and labels.                                    | `blkid`                                                                                                                                         |
 | `dmesg \| grep sd`                | View kernel messages about new disks.                                   | `dmesg \| grep sd`                                                                                                                              |
+| `lsmem`                           | Displays memory block layout and total available memory.                | `lsmem`                                                                                                                                         |
 
 <br/>
 
