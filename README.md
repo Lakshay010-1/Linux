@@ -109,3 +109,7 @@
 ### 24 [Swap Space](./configurations/swap-space.md)
 
 ### 25 [Web Server](./configurations/web-servers.md)
+
+# Secuirty Threats
+
+### [Types of Secuirty Threats](./concepts/security-threats.md)
