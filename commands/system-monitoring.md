@@ -16,6 +16,7 @@
 | uptime            | `uptime`            | Show system uptime and load average                           | uptime            |
 | top               | `top`               | Real-time view of processes, CPU, and memory                  | top               |
 | htop              | `htop`              | Interactive process viewer (like top but better)              | htop              |
+| lscpu             | `lscpu`             | Displays CPU architecture, cores, threads, sockets info       | lscpu             |
 | mpstat            | `mpstat 1`          | CPU usage per processor (requires sysstat)                    | mpstat -P ALL 1   |
 | sar -u            | `sar -u 1 3`        | Historical CPU usage (from sysstat)                           | sar -u 1 5        |
 | cat /proc/cpuinfo | `cat /proc/cpuinfo` | Contains detailed information about the CPU(s) on your system | cat /proc/cpuinfo |
