@@ -34,25 +34,28 @@ Z --> Zombie ( finished but still in process table )
 
 ## 🔹Process Management Commands
 
-| Command | Syntax                       | Description                                                                | Example                  |
-| ------- | ---------------------------- | -------------------------------------------------------------------------- | ------------------------ |
-| ps      | `ps -e`                      | Show all running processes                                                 | ps -e                    |
-| ps      | `ps aux`                     | Show all running processes in BSD format                                   | ps aux                   |
-| ps      | `ps -ef`                     | Show all running processes in full format listing                          | ps -ef                   |
-| ps      | `ps -u [username]`           | Show all processes by username                                             | ps -u lakshayg           |
-| top     | `top`                        | Real-time view of processes and resource usage (Refreshes every 3 seconds) | top                      |
-| top     | `top -u [username]`          | Real-time view of processes and resource usage by user                     | top -u [username]        |
-| top     | `top then press c`           | show commands absolute path                                                | top, press c             |
-| top     | `top then press k`           | kill a process by pid within top session                                   | top, press k             |
-| top     | `top then press m and p`     | Sort processes by memory usage                                             | top, press m and p       |
-| htop    | `htop`                       | Interactive process viewer (scrollable)                                    | htop                     |
-| kill    | `kill [signal] <PID>`        | Terminate a process by PID                                                 | kill 1234                |
-| killall | `killall <name>`             | Kill process by name                                                       | killall firefox          |
-| pkill   | `pkill <pattern>`            | Kill process by pattern                                                    | pkill -u user1           |
-| nice    | `nice -n <value> <command>`  | Start process with priority (-20 high, 19 low)                             | nice -n 10 gzip file.tar |
-| renice  | `renice <priority> -p <PID>` | Change priority of a running process                                       | renice 5 -p 1234         |
-| pstree  | `pstree`                     | Show processes in tree format                                              | pstree -p                |
-| pgrep   | `pgrep <name>`               | Find PIDs by process name                                                  | pgrep apache2            |
+| Command | Syntax                       | Description                                                                 | Example                  |
+| ------- | ---------------------------- | --------------------------------------------------------------------------- | ------------------------ |
+| ps      | `ps -e`                      | Show all running processes                                                  | ps -e                    |
+| ps      | `ps aux`                     | Show all running processes in BSD format                                    | ps aux                   |
+| ps      | `ps -ef`                     | Show all running processes in full format listing                           | ps -ef                   |
+| ps      | `ps -u [username]`           | Show all processes by username                                              | ps -u lakshayg           |
+| top     | `top`                        | Real-time view of processes and resource usage (Refreshes every 3 seconds)  | top                      |
+| top     | `top -u [username]`          | Real-time view of processes and resource usage by user                      | top -u [username]        |
+| top     | `top then press c`           | show commands absolute path                                                 | top, press c             |
+| top     | `top then press k`           | kill a process by pid within top session                                    | top, press k             |
+| top     | `top then press m and p`     | Sort processes by memory usage                                              | top, press m and p       |
+| htop    | `htop`                       | Interactive process viewer (scrollable)                                     | htop                     |
+| kill    | `kill [signal] <PID>`        | Terminate a process by PID                                                  | kill 1234                |
+| killall | `killall <name>`             | Kill process by name                                                        | killall firefox          |
+| pkill   | `pkill <pattern>`            | Kill process by pattern                                                     | pkill -u user1           |
+| nice    | `nice -n <value> <command>`  | Start process with priority (-20 high, 19 low)                              | nice -n 10 gzip file.tar |
+| renice  | `renice <priority> -p <PID>` | Change priority of a running process                                        | renice 5 -p 1234         |
+| pstree  | `pstree`                     | Show processes in tree format                                               | pstree -p                |
+| pmap    | `pmap <PID>`                 | Displays memory usage map of a process                                      | pmap 1234                |
+| lsof    | `lsof`                       | Lists files opened by processes → used to troubleshoot “file busy” problems | lsof                     |
+|         | `lsof /path/file`            | Find who is using a device/log file                                         | lsof /var/log/messages   |
+|         | `lsof -i :\<port>`           | Check what process is using port 80                                         | lsof -i :22              |
 
 ---
 
