@@ -2,12 +2,18 @@
 
 ## 1. Basic File Permissions
 
-- | Command          | Syntax                        | Description                                      | Example             |
-  | ---------------- | ----------------------------- | ------------------------------------------------ | ------------------- |
-  | ls -l            | `ls -l <file>`                | List file permissions, ownership, size, and date | ls -l file.txt      |
-  | chmod            | `chmod [options] mode file`   | Change file permissions (read/write/execute)     | chmod 755 script.sh |
-  | chmod (symbolic) | `chmod [ugoa][+-=][rwx] file` | Modify permissions using symbolic notation       | chmod u+x script.sh |
-  | umask            | `umask [value]`               | Set default permission mask for new files/dirs   | umask 022           |
+- | Command          | Syntax                        | Description                                                                         | Example             |
+  | ---------------- | ----------------------------- | ----------------------------------------------------------------------------------- | ------------------- |
+  | ls -l            | `ls -l <file>`                | List file permissions, ownership, size, and date                                    | ls -l file.txt      |
+  | chmod            | `chmod [options] mode file`   | Change file permissions (read/write/execute)                                        | chmod 755 script.sh |
+  | chmod (symbolic) | `chmod [ugoa][+-=][rwx] file` | Modify permissions using symbolic notation                                          | chmod u+x script.sh |
+  | umask            | `umask `                      | Check Current umask                                                                 | umask               |
+  |                  | `umask [value]`               | Set default permission mask for new files/dirs (Temporarily (Current Session Only)) | umask 022           |
+
+- | File                                            | Add                 | Description                                                                        | Example    |
+  | ----------------------------------------------- | ------------------- | ---------------------------------------------------------------------------------- | ---------- |
+  | `/.bashrc or .bash_profile`                     | umask \<permission> | Set default permission mask for new files/dirs (Permanent (for a single user))     | umask 0002 |
+  | `/etc/profile, /etc/bashrc or /etc/bash.bashrc` | umask \<permission> | Set default permission mask for new files/dirs (Permanent (for system-Wide users)) | umask 0002 |
 
 ---
 
