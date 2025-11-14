@@ -66,6 +66,13 @@ Runlevels are (no level 2 and 4) :
   | crontab -r           | `crontab -r`             | Remove all cron jobs for the current user.                                          | crontab -r → Deletes all cron jobs                                |
   | crontab -u <user> -e | `crontab -u username -e` | Edit cron jobs for a specific user (requires root).                                 | crontab -u alice -e → Edit Alice’s cron jobs                      |
 
+- ### Anacron
+
+  - Anacron is a Linux tool used to run periodic tasks (daily, weekly, monthly) that are guaranteed to run, even if the machine was off or asleep at the scheduled time.
+  - Anacron uses the file:<br/>`/etc/anacrontab`
+  - Format: **period** **delay** **job-identifier** **command**
+  - Cron runs at the exact time and, Anacron runs as soon as possible
+
 - ### at
 
   - Daemon/Service that manages `at` command is `atd`.
