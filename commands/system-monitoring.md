@@ -101,4 +101,37 @@
 | `/var/log/cron`     | File      | Cron jobs logs                                                      |
 | `/var/log/maillog`  | File      | Mail server logs                                                    |
 
+### LogRotate
+
+- logrotate is a system utility in Linux that automatically rotates, compresses, renames, and deletes log files to prevent them from growing too large.
+- It helps manage logs by:
+
+  - preventing disk from filling
+
+  - keeping old logs in a clean structure
+
+  - compressing older logs
+
+  - automatically deleting logs after some time
+
+  - restarting/reloading services if needed
+
+- Logrotate Configurations Files Are:
+
+  1. Global config:<br/>/etc/logrotate.conf
+  2. Individual service configs:<br/>/etc/logrotate.d/
+
+- Example for var/log/messages:
+
+  ```
+
+                  /var/log/messages {
+                    rotate 5
+                    daily
+                    compress
+                    missingok
+                    notifempty
+                  }
+  ```
+
 ---
