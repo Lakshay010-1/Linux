@@ -40,16 +40,19 @@ Runlevels are (no level 2 and 4) :
 
 ## 🔹 3. System Information Utilities
 
-| Command   | Syntax                | Description                                                           | Example          |
-| --------- | --------------------- | --------------------------------------------------------------------- | ---------------- |
-| uname     | `uname -a`            | Show system/kernel info                                               | uname -r         |
-| hostname  | `hostname [newname]`  | Show or set hostname                                                  | hostname server1 |
-| arch      | `arch`                | Show system architecture                                              | arch             |
-| which     | `which command`       | Locate the path of a command                                          | which ls         |
-| whereis   | `whereis command`     | Locate binary, source, and man page                                   | whereis bash     |
-| type      | `type command`        | Show how a command is interpreted                                     | type ls          |
-| dmidecode | `dmidecode [options]` | Extracts low-level hardware details directly from system firmware     | dmidecode        |
-| sosreport | `sosreport [options]` | Run sosreport interactively (will prompt for case ID and description) | sosreport        |
+| Command   | Syntax                | Description                                                           | Example                      |
+| --------- | --------------------- | --------------------------------------------------------------------- | ---------------------------- |
+| basename  | `basename  <file>`    | Returns filename only, removes directory path                         | basename /home/user/file.txt |
+| dirname   | `dirname <file>`      | Returns directory path of a file.                                     | dirname /home/user/file.txt  |
+| realpath  | `realpath <file>`     | Returns the absolute, canonical path to a file.                       | realpath ./test.sh           |
+| uname     | `uname -a`            | Show system/kernel info                                               | uname -r                     |
+| hostname  | `hostname [newname]`  | Show or set hostname                                                  | hostname server1             |
+| arch      | `arch`                | Show system architecture                                              | arch                         |
+| which     | `which command`       | Locate the path of a command                                          | which ls                     |
+| whereis   | `whereis command`     | Locate binary, source, and man page                                   | whereis bash                 |
+| type      | `type command`        | Show how a command is interpreted                                     | type ls                      |
+| dmidecode | `dmidecode [options]` | Extracts low-level hardware details directly from system firmware     | dmidecode                    |
+| sosreport | `sosreport [options]` | Run sosreport interactively (will prompt for case ID and description) | sosreport                    |
 
 ---
 
