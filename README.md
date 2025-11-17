@@ -2,114 +2,175 @@
 
 ### Linux scripts and configurations for automation, optimization, and productivity
 
-### - [Security Enhanced Linux](./SELinux.md)
+- Linux is an open-source operating system kernel created by Linus Torvalds in 1991.
 
-### - [Guest Addition Tools](./guest-additions-tools.md)
+- Linux distribution (distro):
 
-## Command Syntax
+  - Kernel + GNU tools + package manager + desktop environment + applications
 
-- #### command [options] [arguments]
-  - `command` → the program you want to run (e.g., ls, cp, grep).
-  - `options` (flags, switches) → modify the behavior of the command. Usually start with - or --.
-  - `arguments` → the target(s) the command works on (files, directories, text, etc.).
+---
 
-<br>
+<br/>
+<br/>
+<br/>
+
+# SELinux, Guest Addition Tools Config and <br/>Linux Commands, Concepts, Scripts, Configurations
+
+- ### [Security Enhanced Linux ( SELinux )](./SELinux.md)
+
+- ### [Guest Addition Tools](./concepts/guest-additions-tools.md)
+
+- ### [Commands](#linux-commands)
+
+  - Command Syntax : **`command [options] [arguments]`**
+    - `command` → the program you want to run (e.g., ls, cp, grep).
+    - `options` (flags, switches) → modify the behavior of the command. Usually start with - or --.
+    - `arguments` → the target(s) the command works on (files, directories, text, etc.).
+
+- ### [Configurations](#linux-configurations)
+
+- ### [Scripts](#linux-scripts)
+
+- ### [Concepts](#linux-concepts)
+
+- ### [Security Threats](#os-security-threats)
+
+---
+
+<br/>
+<br/>
+<br/>
+
+# Linux Scripts
+
+## 🔹 [Archive Old OR Large Files](./scripts/archive-files.sh)
+
+## 🔹 [Check Server Connectivity](./scripts/check-server-connectivity.sh)
+
+## 🔹 [Check Disk Storage and Send alert mail](./scripts/disk-storage-mail-alert.sh)
+
+## 🔹 [Create Users](./scripts/create-users.sh)
+
+## 🔹 [Display Time](./scripts/time.sh)
+
+## 🔹 [Display System Info](./scripts/system-info.sh)
+
+## 🔹 [IP Fetcher](./scripts/ip-fetcher.sh)
+
+<br/>
+<br/>
 
 # Linux Commands
 
-## 1. [Aliases](./commands/aliases.md)
+## 🔹 [Aliases](./commands/aliases.md)
 
-## 2. [Communication Management](./commands/communication-management.md)
+## 🔹 [Communication Management](./commands/communication-management.md)
 
-## 3. [Disk Management](./commands/disk-management.md)
+## 🔹 [Disk Management](./commands/disk-management.md)
 
-## 4. [Environment Variables](./commands/env_var.md)
+## 🔹 [Environment Variables](./commands/env_var.md)
 
-## 5. [File and Directory Management](./commands/file-management.md)
+## 🔹 [File and Directory Management](./commands/file-management.md)
 
-## 6. [File Permissions](./commands/file-permission.md)
+## 🔹 [File Permissions](./commands/file-permission.md)
 
-## 7. [Help Commands](./commands/help.md)
+## 🔹 [Firewall](./commands/firewall.md)
 
-## 8. [Network Management](./commands/network-management.md)
+## 🔹 [Help Commands](./commands/help.md)
 
-## 9. [Package Management](./commands/package-management.md)
+## 🔹 [Network Management](./commands/network-management.md)
 
-## 10. [Process Management](./commands/process-management.md)
+## 🔹 [Package Management](./commands/package-management.md)
 
-## 11. [Shell Scripting](./commands/shell-scripting.md)
+## 🔹 [Process Management](./commands/process-management.md)
 
-## 12. [System Monitoring](./commands/system-monitoring.md)
+## 🔹 [Shell Scripting](./commands/shell-scripting.md)
 
-## 13. [System Security](./commands/system-hardening.md)
+## 🔹 [System Monitoring](./commands/system-monitoring.md)
 
-## 14. [System Utility](./commands/system-utility.md)
+## 🔹 [System Security](./commands/system-hardening.md)
 
-## 15. [Terminal Multiplexer](./commands/terminal-multiplexer.md)
+## 🔹 [System Utility](./commands/system-utility.md)
 
-## 16. [Text Processing](./commands/text-processing.md)
+## 🔹 [Terminal Multiplexer](./commands/terminal-multiplexer.md)
 
-## 17. [User Management](./commands/user-management.md)
+## 🔹 [Text Processing](./commands/text-processing.md)
 
-## 18. [VI Commands](./commands/VI-editor.md)
+## 🔹 [User Management](./commands/user-management.md)
+
+## 🔹 [VI Commands](./commands/VI-editor.md)
 
 ---
 
 <br/>
 <br/>
 
-# Configurations
+# Linux Configurations
 
-### 1. [Ansible](./configurations/ansible.md)
+## 🔹 [Ansible](./configurations/ansible.md)
 
-### 2. [Cockpit](./configurations/cockpit.md)
+## 🔹 [Cockpit](./configurations/cockpit.md)
 
-### 3. [Containers](./configurations/containers.md)
+## 🔹 [Containers](./configurations/containers.md)
 
-### 4. [Database Setup](./configurations/database-setup.md)
+## 🔹 [Database Setup](./configurations/database-setup.md)
 
-### 5. [DNS](./configurations/dns.md)
+## 🔹 [DNS](./configurations/dns.md)
 
-### 6. [Firewall](./configurations/firewall.md)
+## 🔹 [Firewall](./configurations/firewall.md)
 
-### 7. [FTP](./configurations/ftp.md)
+## 🔹 [FTP](./configurations/ftp.md)
 
-### 8. [Kickstart](./configurations/kickstart.md)
+## 🔹 [Kickstart](./configurations/kickstart.md)
 
-### 9. [Local-Repo](./configurations/local-repo.md)
+## 🔹 [Local-Repo](./configurations/local-repo.md)
 
-### 10. [Mail Server](./configurations/mail-servers.md)
+## 🔹 [Mail Server](./configurations/mail-servers.md)
 
-### 11. [Nagios](./configurations/nagios.md)
+## 🔹 [Nagios](./configurations/nagios.md)
 
-### 12. [NAS Setup](./configurations/nas-setup.md)
+## 🔹 [NAS Setup](./configurations/nas-setup.md)
 
-### 13 [NIC Bonding](./configurations/nic-bonding.md)
+## 🔹[NIC Bonding](./configurations/nic-bonding.md)
 
-### 14 [Partition-LVM extend Storage](./configurations/partition-lvm-extend.md)
+## 🔹[Partition-LVM extend Storage](./configurations/partition-lvm-extend.md)
 
-### 15 [Partition-LVM Mount](./configurations/partition-lvm-mount.md)
+## 🔹[Partition-LVM Mount](./configurations/partition-lvm-mount.md)
 
-### 16 [Partition Mount](./configurations/partition-standard-mount.md)
+## 🔹[Partition Mount](./configurations/partition-standard-mount.md)
 
-### 17 [openLDAP](./configurations/openLDAP.md)
+## 🔹[openLDAP](./configurations/openLDAP.md)
 
-### 18 [openVPN](./configurations/openVPN.md)
+## 🔹[openVPN](./configurations/openVPN.md)
 
-### 19 [Proxy Server](./configurations/proxy-server.md)
+## 🔹[Proxy Server](./configurations/proxy-server.md)
 
-### 20 [Rsyslog](./configurations/rsyslog.md)
+## 🔹[Rsyslog](./configurations/rsyslog.md)
 
-### 21 [SSH](./configurations/ssh.md)
+## 🔹[SSH](./configurations/ssh.md)
 
-### 22 [SSH-Key](./configurations/ssh-key.md)
+## 🔹[SSH-Key](./configurations/ssh-key.md)
 
-### 23 [Stratis Storage](./configurations/stratis.md)
+## 🔹[Stratis Storage](./configurations/stratis.md)
 
-### 24 [Swap Space](./configurations/swap-space.md)
+## 🔹[Swap Space](./configurations/swap-space.md)
 
-### 25 [Web Server](./configurations/web-servers.md)
+## 🔹[Web Server](./configurations/web-servers.md)
 
-# Secuirty Threats
+<br/>
+<br/>
 
-### [Types of Secuirty Threats](./concepts/security-threats.md)
+# Linux Concepts
+
+## 🔹 [Boot Process](./concepts/boot-process-computer.md)
+
+## 🔹 [Boot Process Components](./concepts/boot-process-components.md)
+
+## 🔹 [Disk Components](./concepts/disk-mng-components.md)
+
+<br/>
+<br/>
+
+# OS Security Threats
+
+## 🔹 [Types of Secuirty Threats](./concepts/security-threats.md)
